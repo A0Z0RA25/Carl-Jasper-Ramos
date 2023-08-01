@@ -325,25 +325,26 @@ body::-webkit-scrollbar{
     width: 52%;
     position: absolute;
     left: 40%;
+    padding-bottom: 20px;
 }
 form{
-    width: 100%;
-    top: 20%;
-    left: -5%;
-    position: absolute;
-    overflow: hidden;
+    position: relative;
+    left: 90px;
 }
 .email-page{
-    display: flex;
     flex-direction: column;
     margin: 20px 0;
     align-items: center;
     font-size: 18px;
 }
+.email-page span h1{
+    font-size: 25px;
+    line-height: 1px;
+}
 #mail-input{
     background-color: var(--bg-color);
     border-radius: 10px;
-    width: 400px;
+    width: 500px;
     padding: 20px;
     margin: 0 0 50px 20px;
     color: white;
@@ -353,7 +354,7 @@ form{
 #name-input{
     background-color: var(--bg-color);
     border-radius: 10px;
-    width: 400px;
+    width: 500px;
     padding: 20px;
     margin: 0 0 20px 20px;
     color: white;
@@ -378,12 +379,12 @@ form{
     margin-left: 30px;
 }
 #submit{
-    margin: 10px 0px;
+    margin: 1px 180px;
     padding: 10px;
     background-color: var(--bg-color);
     color: white;
     width: 30%;
-    
+    text-align: center;
 }
 
 
@@ -404,8 +405,15 @@ form{
         margin-bottom: 20px;
         position: relative;
         width: 80%;
-        left: 8px;
+        left: 4px;
+        right: 2px;
         border: none;
+    }
+    .info-hidden{
+        display: none;
+    }
+    hr{
+        display: none;
     }
     /* ABOUT SECTION */
     .about{
@@ -419,12 +427,12 @@ form{
         left: 0;
         bottom: 0;
         -webkit-backdrop-filter: blur(8px); 
-    backdrop-filter: blur(8px);
-    background: none;
+        backdrop-filter: blur(8px);
+        background: none;
     }
     .navbar ul li{
         display: inline-flex;
-        margin: 10px 30px 10px 30px;
+        margin: 10px 30px 10px 10px;
         justify-content: center;
     }
     .navbar ul li a{
@@ -465,41 +473,78 @@ form{
 
 /* PLAN */
 
-.project-container{
+.plan-container{
     position: relative;
-    left: 0;
-    width: 100%;
+    left: 0px;
+    width: 90%;
     height: 100vh;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
+    padding: 20px;
+}
+.plan-container .title{
+    padding: 40px 0;
+    margin-bottom: 30px;
+}
+.plan-container .plan-line{
+    height: 425px;
+    top: 26%;
+    left: 35px;
 }
 .first-bullet, .second-bullet, .third-bullet, .fourth-bullet{
     position: relative;
-    left: 60px;
-    top: 30px;
-    line-height: 17px;
+    left: 40px;
+    top: -60px;
+    margin: 10px 0;
+    font-size: 13px;
+}
+ .third-bullet h1{
+    line-height: 30px;
 }
 .circle1 i,.circle2,.circle3,.circle4{
     position: relative;
-    left: 30px;
-    top:  20px;
+    left: 5px;
+    top:  -20px;
 }
 
 /* CONTACT */
 .contact-container{
-    width: 100%;
+    width: 98.5%;
     position: relative;
-    left: 0;
-    height: 100%;
-    padding-bottom: 600px;
+    left: 2px;
+    height: 100px;
+    padding-bottom: 700px;
+}
+.contact-title{
+    padding: 50px 25px;
 }
 #name-input, #mail-input{
-    width: 20px;
-    padding: 0;
-    margin: 0;
+    width: 50%;
+    padding:10px 10px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+.email-page span h1{
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 1px;
+    margin: 20px 120px;
+}
+form{
+    margin: 0 -70px;
+}
+.message textarea{
+    width: 55%;
+    margin-left: 0;
+    font-size: 10px;
 }
 .message{
-    width: 20px;
-    margin-top: 20px;
-     
+    margin: 40px 0;
+}
+#submit{
+    width: 60%;
+    margin: 0 auto;
 }
 }
