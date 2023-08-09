@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color:linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(49,205,237,1) 79%);
+    --bg-color2:rgb(238, 230, 230);
+}
+
+            /* HEADER AND NAVIGATION */
+header{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    padding: 20px 0;
+    color: black;
+}
+nav ul li{
+    display: inline-flex;
+    margin: 20px 80px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+                 /* FIRST PAGE / INTRO*/
+.first-page{
+    display: flex;
+    padding: 200px 140px;
+    height: 100vh;
+    background: var(--bg-color);
+    justify-content: space-between;
+}
+.first-page .intro-image img{
+    width: 400px;
+    margin: 0px 200px 0 350px;
+}
+.intro{
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+.intro h1{
+    font-size: 100px;
+}
+.intro p{
+    font-size: 20px;
+}   
+                 /* SOCIAL MEDIA */
+.socmed{
+    margin: 90px 0;
+}
+.socmed i{
+    margin: 0 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(59, 59, 113);
+}
+          /* SECOND PAGE */
+.product-page{
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-color2);
+}
+.product-page .title{
+    margin: 0 50px;
+    padding: 100px 0;
+    font-size: 50px;
+}
+            /* ROW ITEM */
+.product-page img{
+    width: 300px;
+    border: solid;
+    height: 400px;
+    margin: 20px;
+    padding: 30px 0;
+    background-color: white;
+}
+.product-page .product-row{
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+    margin:-90px 0 0 0;
+}
+.item-descript{
+    display: flex;
+    justify-content: space-around;
+}
+.item-descript p{
+    margin: auto 0;
+}
+.product-page button{
+    width: 150px;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin: 20px 100px;
+}
+.contact{
+    height: 100%;
+    text-align: center;
+}
+.contact h1{
+    padding: 30px 0 10px 0;
+}
