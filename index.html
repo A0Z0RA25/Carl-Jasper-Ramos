@@ -19,22 +19,24 @@
         <div class="job">
           <h1>Carl Jasper Ramos</h1>
           <h2>Web Developer</h2>  
+          <button class="info-show hidden" onclick="infoShow()">Show</button>
         </div>
-        <hr />
-        <div class="soc-med info-hidden">
+
+        <div class="show" id="show">
+          <hr />
+          <div class="soc-med ">
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-instagram"></i>
         </div>
         <hr/>
-        <div class="contact info-hidden">
+        <div class="contact" id="show" >
             <div class="email flex">
                  <i class="fa-regular fa-envelope"></i>
                  <div class="inbox">
                     <h1>Email</h1>
                     <p>carljasperramos97@gmail.com</p> 
                  </div>
-                 
             </div>
 
             <div class="phone flex">
@@ -54,7 +56,7 @@
                 
                </div>   
             </div>
-            
+         </div>
         </div>
 </div>
 <!-- SECOND SECTION -->
@@ -64,7 +66,8 @@
     <ul>
         <li><a id="home" onclick="myFunction()" >About</a></li>
         <li><a id="project" onclick="myFunction2()" >Plan</a></li>
-        <li><a id="about" onclick="myFunction3()">Contact</a></li>
+        <li><a id="project" onclick="myFunction3()" >Projects</a></li>
+        <li><a id="about" onclick="myFunction4()">Contact</a></li>
     </ul>
 </nav>
 
@@ -128,7 +131,7 @@
         </div>
         
 
-<!-- PROJECT SECTION -->
+<!-- PLAN SECTION -->
 
 <div class="plan-container hidden" id="myDIV2">
     <h1 class="title">My plan</h1>
@@ -168,12 +171,35 @@
 
 </div>
 
+<!-- PROJECTS PAGE -->
 
+<div class="projects-container hidden" id="myDIV3">
+    <h1 class="head">My Projects</h1>
+    
+    <div class="all-projects">
+
+        <div class="project1">
+            <a href="/portfolio/prj1.html"><img src="PLP.png" alt=""></a>
+            <h1 class="project-title"><a href="/portfolio/prj1.html">Product Landing Page</a></h1>
+        </div>
+
+        <div class="project2">
+          <a href="/portfolio/prj1.html"><img src="PLP.png" alt=""></a>
+          <h1 class="project-title"><a href="/portfolio/prj1.html">Product Landing Page</a></h1>
+      </div>
+
+      <div class="project3">
+        <a href="/portfolio/prj1.html"><img src="PLP.png" alt=""/></a>
+        <h1 class="project-title"><a href="/portfolio/prj1.html">Product Landing Page</a></h1>
+    </div>
+
+    </div>
+</div>
 
 
 <!-- ABOUT SECTION -->
 
-<div class="contact-container hidden" id="myDIV3">
+<div class="contact-container hidden" id="myDIV4">
     <h1 class="contact-title">Contact</h1>
     <form action="mailto:carljasperramos97@gmail.com" >
         <div class="email-page">
@@ -198,17 +224,20 @@
 
 var x = document.getElementById("myDIV");
 var y = document.getElementById("myDIV2");
-var z = document.getElementById("myDIV3");
+var a = document.getElementById("myDIV3")
+var z = document.getElementById("myDIV4");
 
 function myFunction() {
     if (x.style.display === "none") {
       x.style.display = "block"
       y.style.display = "none"
       z.style.display = "none"
+      a.style.display = "none"
     } else {
       x.style.display = "block"
       y.style.display = "none"
       z.style.display = "none"
+      a.style.display = "none"
     }
   }
 
@@ -219,23 +248,51 @@ function myFunction() {
       y.style.display = "block"
       x.style.display = "none"
       z.style.display = "none"
+      a.style.display = "none"
     } else {
       y.style.display = "block"
+      x.style.display = "none"
+      z.style.display = "none"
+      a.style.display = "none"
+    }
+  }
+
+
+  function myFunction3() {
+    if (a.style.display === "none") {
+      a.style.display = "block"
+      y.style.display = "none"
+      x.style.display = "none"
+      z.style.display = "none"
+    } else {
+      a.style.display = "block"
+      y.style.display = "none"
       x.style.display = "none"
       z.style.display = "none"
     }
   }
 
 
-  function myFunction3() {
+  function myFunction4() {
     if (z.style.display === "none") {
       z.style.display = "block"
       y.style.display = "none"
       x.style.display = "none"
+      a.style.display = "none"
     } else {
       z.style.display = "block"
       y.style.display = "none"
       x.style.display = "none"
+      a.style.display = "none"
+    }
+  }
+
+  function infoShow(){
+    var click = document.getElementById("show");
+    if(click.style.display === "none"){
+      click.style.display = "block";
+    } else {
+      click.style.display = "none";
     }
   }
 
