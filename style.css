@@ -254,7 +254,7 @@ body::-webkit-scrollbar{
     border-radius:50%;
     font-size: 7px;
     background-color: var(--bg-color);
-    color: red;
+    color: green;
 }
 
 .second-bullet{
